@@ -30,3 +30,5 @@ console.log('JWT_SECRET=' + generateKey());
 console.log('\n' + '='.repeat(60));
 console.log('\n✅ Generated! Copy these to your environment variables.\n');
 
+
+
