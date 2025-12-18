@@ -31,9 +31,10 @@ export default [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: process.env.CORS_ORIGIN 
-        ? process.env.CORS_ORIGIN.split(',') 
-        : ['*'], // Allow all in development, set specific domains in production
+      origin: [
+        "https://lumen-sgix.onrender.com",
+        "https://www.lumen-sgix.onrender.com"
+      ],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
     },
   },
